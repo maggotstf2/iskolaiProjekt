@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js.js"></script>
 </head>
 <body>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro doloremque molestiae, inventore non sequi labore molestias, vel culpa voluptatibus a iusto placeat provident delectus enim qui rerum nisi temporibus architecto.
+
+    Havi áramfogyasztás: <input type="number" min="0" max="25000" id="aram">kWh<br>
+    Havi gázfogyasztás: <input type="number" min="0" max="500" id="gaz">m^3<br>
+    Havi vízfogyasztás: <input type="number" min="0" max="30" id="viz">m^3<br>
+    Közös költség: <input type="number" min="6000" max="22000" id="koz">Ft<br>
+
+    Áramdíj: <input type="text" readonly>
+    
+    Gázdíj: <input type="text" readonly>
+
+    Vízdíj: <input type="text" readonly>
+
+
+    <button onclick="szamol()"></button>
 </body>
 </html>
