@@ -111,10 +111,10 @@ function szamol()
     ){
         document.write
         (
-            "<b><u>Áram:</u></b><br>Kedvezményes: " + aram+"*14.2"+"<br>A felleti:"+ aram + "*15.08 <br> Összesen: "+aramar+
-            "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: " + gaz+"*14.2  =  "+aramar+" <br>      A felleti:"+
-            "<br><br><b><u>Víz:</u></b><br>Kedvezményes: " + aram+"*14.2  =  "+aramar+" <br>      A felleti:"+
-            "<br><br><b><u>Közösköltség:</u></b><br>Kedvezményes: " + aram+"*14.2  =  "+aramar+" <br>      A felleti:"
+            "<b><u>Áram:</u></b><br>Kedvezményes: "+aram+"*14.2"+"<br>A felleti:"+ aram + "*15.08 <br> Összesen: "+aramar+
+            "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: "+gaz+"*14.2  =  "+gazar+" <br>A felleti:"+
+            "<br><br><b><u>Víz:</u></b><br>Kedvezményes: "+viz+"*14.2  =  "+vizar+" <br>A felleti:"+
+            "<br><br><b><u>Közösköltség:</u></b><br>Kedvezményes: "+kozos+"*14.2  =  "+kozosar+" <br>A felleti:"
         )
     }
 }
