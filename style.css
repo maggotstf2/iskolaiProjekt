@@ -1,3 +1,9 @@
+body
+{
+    background-image:url(images/allIcons.png);
+    background-repeat: repeat-x repeat-y;
+    background-size: 15%;
+}
 .divAll
 {
     margin: 250px;
@@ -9,9 +15,7 @@
     margin: 15px;
     text-align: center;
 }
-body
+.button
 {
-    background-image:url(images/allIcons.png);
-    background-repeat: repeat-x repeat-y;
-    background-size: 15%;
+    border-radius: 5px;
 }

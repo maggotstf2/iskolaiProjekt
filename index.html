@@ -15,10 +15,12 @@
     <div class="bgImg"></div>
     <h2 class="erzsiCalc">Ultimate Erzsi-kalkulátor</h2>
     <div class="divAll">
-        Havi áramfogyasztás: <input type="number" min="0" max="25000" id="aram" size="5">kWh <span id="hiba1"></span><br>
-        Havi gázfogyasztás: <input type="number" min="0" max="500" id="gaz" size="5">m&sup3 <span id="hiba2"></span><br>
-        Havi vízfogyasztás: <input type="number" min="0" max="30" id="viz" size="5">m&sup3 <span id="hiba3"></span><br>
-        Közös költség: <input type="number" min="6000" max="22000" id="koz" size="5">Ft <span id="hiba4"></span><br>
+        Havi áramfogyasztás: <input type="number" min="0" max="25000" id="aram">kWh <span id="hiba1"></span><br>
+        Havi gázfogyasztás: <input type="number" min="0" max="500" id="gaz">m&sup3 <span id="hiba2"></span><br>
+        Havi vízfogyasztás: <input type="number" min="0" max="30" id="viz">m&sup3 <span id="hiba3"></span><br>
+        Közös költség: <input type="number" min="6000" max="22000" id="koz">Ft <span id="hiba4"></span><br>
+        
+        <hr>
     
         Áramdíj: <input type="text" id="aramar" readonly><br>
         
@@ -26,9 +28,9 @@
     
         Vízdíj: <input type="text" id="vizar" readonly><br>
     
-        Közösköltség: <input type="text" id="kozar" readonly><br>
+        Közösköltség: <input type="text" id="kozar" readonly><br><br>
         
-        <button onclick="szamol()">Számol</button>
+        <button class="button" onclick="szamol()">Számol</button>
     </div>
 </body>
 </html>

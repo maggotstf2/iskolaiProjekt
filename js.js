@@ -1,11 +1,5 @@
-var aram;
-var gaz;
-var viz;
-var kozos;
-var aramar;
-var gazar;
-var vizar;
-var kozosar;
+var aram,gaz,viz,kozos,aramar,gazar,vizar,kozosar;
+let fAram,fGaz;
 
 function szamol()
 {
@@ -14,6 +8,7 @@ function szamol()
     viz= parseFloat(document.getElementById("viz").value);
     kozos= parseInt(document.getElementById("koz").value);
     
+//ár min/max checker
     if(aram<0||aram>25000&&aram!="")
         {
             document.getElementById("hiba1").innerHTML="Hiba"
@@ -38,8 +33,6 @@ function szamol()
 
             }
     }
-
-
 
     if(gaz<0||gaz>500&&document.getElementById("gaz").value != "")
     {
@@ -88,7 +81,7 @@ function szamol()
 
             }
     }
-
+    
     if(kozos<6000||kozos>22000&&document.getElementById("koz").value != "")
         {
             document.getElementById("hiba4").innerHTML="Hiba"
@@ -99,22 +92,32 @@ function szamol()
             kozosar=kozos
             document.getElementById("kozar").value=kozosar;
             document.getElementById("hiba4").innerHTML=""
-
         }
+//felettiek
+    if(aram-1320<0){fAram=0}
+    else{fAram=aram-1320}
 
-
-    if(  
-            document.getElementById("hiba1").innerHTML==""&&
-            document.getElementById("hiba2").innerHTML==""&&
-            document.getElementById("hiba3").innerHTML==""&&
-            document.getElementById("hiba4").innerHTML==""
-    ){
+    if(gaz-149.91<0){fGaz=0}
+    else{fGaz=gaz-149.91}
+//document.write felulet
+    if
+    (
+        document.getElementById("aramar").value!=""&&
+        document.getElementById("vizar").value!=""&&
+        document.getElementById("gazar").value!=""&&
+        document.getElementById("kozar").value!=""&&
+        document.getElementById("hiba1").innerHTML==""&&
+        document.getElementById("hiba2").innerHTML==""&&
+        document.getElementById("hiba3").innerHTML==""&&
+        document.getElementById("hiba4").innerHTML==""
+    )
+    {
         document.write
         (
-            "<b><u>Áram:</u></b><br>Kedvezményes: "+aram+"*14.2"+"<br>A felleti:"+ aram + "*15.08 <br> Összesen: "+aramar+
-            "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: "+gaz+"*14.2  =  "+gazar+" <br>A felleti:"+
-            "<br><br><b><u>Víz:</u></b><br>Kedvezményes: "+viz+"*14.2  =  "+vizar+" <br>A felleti:"+
-            "<br><br><b><u>Közösköltség:</u></b><br>Kedvezményes: "+kozos+"*14.2  =  "+kozosar+" <br>A felleti:"
+            "<b><u>Áram:</u></b><br>Kedvezményes: "+(aram-fAram)+"*14.2"+"<br>A felleti: "+ fAram + "*15.08 <br> Összesen: "+Math.floor(aramar)+"Ft"+
+            "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: "+gaz+"*85.06  =  "+gazar+" <br>A felleti: "+fGaz+"="+"650.87<br>Összesen: "+Math.floor(gazar)+"Ft"+
+            "<br><br><b><u>Víz:</u></b><br>Alapdíj: "+179.95+"Ft<br>"+"Vízdíj: "+viz+"*218.95"+"<br>Csatornadíj: "+viz+"*526.4<br>"+"Locsolási díj: "+viz+"*504.06<br>Összesen: "+Math.floor(vizar)+"Ft"+
+            "<br><br><b><u>Közösköltség: </u></b>"+kozosar+"Ft"
         )
     }
 }
