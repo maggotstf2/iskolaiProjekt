@@ -1,5 +1,10 @@
 .divAll
 {
-    margin: 105px;
-    background-color: #000;
+    margin: 250px;
+    text-align: center;
+}
+.erzsiCalc
+{
+    margin: 15px;
+    text-align: center;
 }
