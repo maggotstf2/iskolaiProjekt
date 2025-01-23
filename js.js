@@ -109,16 +109,12 @@ function szamol()
             document.getElementById("hiba3").innerHTML==""&&
             document.getElementById("hiba4").innerHTML==""
     ){
-        document.write(
-            "Áram:<br>    Kedvezményes:" + aram+"*14.2  =  "+" <br>      A felleti:"+ "asd" + "*15.08 <br> Összesen: "+ aramar  +
+        document.write
+        (
+            "Áram:<br>Kedvezményes:" + aram+"*14.2  =  "+" <br>A felleti:"+ aram + "*15.08 <br> Összesen: "+ aramar  +
             "<br>Gáz:<br>    Kedvezményes:" + gaz+"*14.2  =  "+aramar+" <br>      A felleti:"+
             "<br>Víz:<br>    Kedvezményes:" + aram+"*14.2  =  "+aramar+" <br>      A felleti:"+
             "<br>Közösköltség:<br>    Kedvezményes:" + aram+"*14.2  =  "+aramar+" <br>      A felleti:"
-        
         )
-
-
-
-
     }
 }
