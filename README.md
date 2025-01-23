@@ -1,4 +1,4 @@
 # iskolaiProjekt
-Andor - JS, Szabi - HTML, Ákos - CSS
+Andor - JS, Szabi - HTML;JS, Ákos - CSS;JS
 
 Template readme file
