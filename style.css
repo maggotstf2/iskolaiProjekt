@@ -9,3 +9,9 @@
     margin: 15px;
     text-align: center;
 }
+body
+{
+    background-image:url(images/allIcons.png);
+    background-repeat: repeat-x repeat-y;
+    background-size: 15%;
+}
