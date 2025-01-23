@@ -9,18 +9,20 @@
 </head>
 <body>
 
-    Havi áramfogyasztás: <input type="number" min="0" max="25000" id="aram">kWh<br>
-    Havi gázfogyasztás: <input type="number" min="0" max="500" id="gaz">m^3<br>
-    Havi vízfogyasztás: <input type="number" min="0" max="30" id="viz">m^3<br>
-    Közös költség: <input type="number" min="6000" max="22000" id="koz">Ft<br>
+    Havi áramfogyasztás: <input type="number" min="0" max="25000" id="aram">kWh <span id="hiba1"></span><br>
+    Havi gázfogyasztás: <input type="number" min="0" max="500" id="gaz">m^3 <span id="hiba2"></span><br>
+    Havi vízfogyasztás: <input type="number" min="0" max="30" id="viz">m^3 <span id="hiba3"></span><br>
+    Közös költség: <input type="number" min="6000" max="22000" id="koz">Ft <span id="hiba4"></span><br>
 
-    Áramdíj: <input type="text" readonly>
+    Áramdíj: <input type="text" id="aramar" readonly><br>
     
-    Gázdíj: <input type="text" readonly>
+    Gázdíj: <input type="text" id="gazar" readonly><br>
 
-    Vízdíj: <input type="text" readonly>
+    Vízdíj: <input type="text" id="vizar" readonly><br>
+
+    Közösköltség: <input type="text" id="kozar" readonly><br>
 
 
-    <button onclick="szamol()"></button>
+    <button onclick="szamol()">Szamol</button>
 </body>
 </html>
