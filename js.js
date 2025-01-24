@@ -11,7 +11,7 @@ function szamol()
 //ár min/max checker
     if(aram<0||aram>25000&&aram!="")
         {
-            document.getElementById("hiba1").innerHTML="Hiba"
+            document.getElementById("hiba1").innerHTML="(0 és 25000 között!)"
             document.getElementById("aram").value=""   
         }
     else
@@ -36,7 +36,7 @@ function szamol()
 
     if(gaz<0||gaz>500&&document.getElementById("gaz").value != "")
     {
-        document.getElementById("hiba2").innerHTML="Hiba"
+        document.getElementById("hiba2").innerHTML="(0 és 500 között!)"
         document.getElementById("gaz").value=""
     }
 
@@ -60,7 +60,7 @@ function szamol()
 
     if(viz<0||viz>30)
         {
-            document.getElementById("hiba3").innerHTML="Hiba"
+            document.getElementById("hiba3").innerHTML="(0 és 30 között!)"
             document.getElementById("viz").value=""
         }
 
@@ -84,7 +84,7 @@ function szamol()
     
     if(kozos<6000||kozos>22000&&document.getElementById("koz").value != "")
         {
-            document.getElementById("hiba4").innerHTML="Hiba"
+            document.getElementById("hiba4").innerHTML="(6000 és 22000 között!)"
             document.getElementById("koz").value=""
         }
     else if(kozos>=6000&&kozos<=22000)

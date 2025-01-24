@@ -19,3 +19,11 @@ body
 {
     border-radius: 5px;
 }
+.vanisher
+{
+    display: none;
+}
+span
+{
+    color: red;
+}
