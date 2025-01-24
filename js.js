@@ -117,7 +117,8 @@ function szamol()
             "<b><u>Áram:</u></b><br>Kedvezményes: "+(aram-fAram)+"*14.2"+"<br>A felleti: "+ fAram + "*15.08 <br> Összesen: "+Math.floor(aramar)+"Ft"+
             "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: "+gaz+"*85.06  =  "+gazar+" <br>A felleti: "+fGaz+"="+"650.87<br>Összesen: "+Math.floor(gazar)+"Ft"+
             "<br><br><b><u>Víz:</u></b><br>Alapdíj: "+179.95+"Ft<br>"+"Vízdíj: "+viz+"*218.95"+"<br>Csatornadíj: "+viz+"*526.4<br>"+"Locsolási díj: "+viz+"*504.06<br>Összesen: "+Math.floor(vizar)+"Ft"+
-            "<br><br><b><u>Közösköltség: </u></b>"+kozosar+"Ft"
+            "<br><br><b><u>Közösköltség: </u></b>"+kozosar+"Ft"+
+            "<br><br><b><u>Teljesköltség: </u></b>"+Math.floor(kozosar+aramar+gazar+vizar)+"Ft"
         )
     }
 }
