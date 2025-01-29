@@ -114,11 +114,13 @@ function szamol()
     {
         document.write
         (
-            "<b><u>Áram:</u></b><br>Kedvezményes: "+(aram-fAram)+"*14.2"+"<br>A felleti: "+ fAram + "*15.08 <br> Összesen: "+Math.floor(aramar)+"Ft"+
+            "<div class='szoveg'><b><u>Áram:</u></b><br>Kedvezményes: "+(aram-fAram)+"*14.2"+"<br>A felleti: "+ fAram + "*15.08 <br> Összesen: "+Math.floor(aramar)+"Ft"+
             "<br><br><b><u>Gáz:</u></b><br>Kedvezményes: "+gaz+"*85.06  =  "+gazar+" <br>A felleti: "+fGaz+"="+"650.87<br>Összesen: "+Math.floor(gazar)+"Ft"+
             "<br><br><b><u>Víz:</u></b><br>Alapdíj: "+179.95+"Ft<br>"+"Vízdíj: "+viz+"*218.95"+"<br>Csatornadíj: "+viz+"*526.4<br>"+"Locsolási díj: "+viz+"*504.06<br>Összesen: "+Math.floor(vizar)+"Ft"+
             "<br><br><b><u>Közösköltség: </u></b>"+kozosar+"Ft"+
-            "<br><br><b><u>Teljesköltség: </u></b>"+Math.floor(kozosar+aramar+gazar+vizar)+"Ft"
+            "<br><br><b><u>Teljesköltség: </u></b>"+Math.floor(kozosar+aramar+gazar+vizar)+"Ft</div>"+"<style>body{background-image: url(images/allIcons.png); background-repeat: repeat-x repeat-y; background-size: 15%;} .szoveg{margin-top: 10%;text-align: center;font-size: large;background-color: white;border:solid;border-collapse: collapse;border-width: 5px;border-radius: 20px;border-color: black;margin-left: 37%;margin-right: 37%; padding: 3%;}</style>"
+           
+           
         )
     }
 }
